@@ -8,8 +8,13 @@
         body { font-family: Arial, sans-serif; text-align: center; background-color: #f8f8f8; }
         .container { max-width: 800px; margin: auto; padding: 20px; }
         .cat-card { background: white; padding: 15px; margin: 10px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .btn { background: #ff4081; color: white; padding: 10px 15px; text-decoration: none; display: inline-block; border-radius: 5px; margin-top: 10px; }
+        .btn { background: #ff4081; color: white; padding: 10px 15px; text-decoration: none; display: inline-block; border-radius: 5px; margin-top: 10px; cursor: pointer; border: none; }
     </style>
+    <script>
+        function showPhoneNumber() {
+            alert("Номер для бронирования: +7 771 699 08 22");
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -17,21 +22,15 @@
         <p>Лучшие кошачьи компаньоны для вашего досуга! Гарантированное мурчание и тёплая компания!</p>
         
         <div class="cat-card">
-            <h2>Барсик</h2>
-            <p>Ласковый и пушистый. Обожает сидеть на коленях и философствовать о смысле жизни.</p>
-            <a href="#" class="btn">Забронировать</a>
+            <h2>Джамиля</h2>
+            <p>Нежная и грациозная кошка с магическим взглядом. Любит уютные вечера и мягкие подушки.</p>
+            <button class="btn" onclick="showPhoneNumber()">Забронировать</button>
         </div>
 
         <div class="cat-card">
-            <h2>Мурка</h2>
-            <p>Опытная мурлыка. Специалист по расслаблению и массажу лапками.</p>
-            <a href="#" class="btn">Забронировать</a>
-        </div>
-
-        <div class="cat-card">
-            <h2>Снежок</h2>
-            <p>Идеальный компаньон. Белоснежный, элегантный, с безупречными манерами.</p>
-            <a href="#" class="btn">Забронировать</a>
+            <h2>Жанеля</h2>
+            <p>Жанеля удовлетворит все ваши потребности.</p>
+            <button class="btn" onclick="showPhoneNumber()">Забронировать</button>
         </div>
     </div>
 </body>
